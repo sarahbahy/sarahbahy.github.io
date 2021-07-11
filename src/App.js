@@ -1,9 +1,10 @@
 import lines from './lines.svg';
-import { useState } from 'react';
+// import { useState } from 'react';
+import NotActiveButton from './components/NotActiveButton'
 import './scss/App.scss';
 
 function App() {
-  const [isShown, setIsShown] = useState(false);
+  // const [isShown, setIsShown] = useState(false);
   return (
     
       <main className="app">
@@ -26,21 +27,9 @@ function App() {
             <p className="card__details light">a react app that enables the user 
             to a add new task, remove a task, and mark a task as a reminder by double clicking on it </p>
           </a>
-          {/* <button className="btn collection__card not-published"
-             onMouseEnter={() => setIsShown(true)}
-             onMouseLeave={(e) => e.currentTarget !== document.activeElement? setIsShown(false): ''}
-             onFocus={() => setIsShown(true) } 
-             onBlur={ () => setIsShown(false) } 
-          >
-            <h4 className="card__title regular">Library App</h4>
-            <p className="card__details light">a react app that enables the user to search through books 
-              and categorize the books in 3 different categories</p>
-              {isShown && (
-              <div className="not-published__overlay">
-                 <h3>will be published soon</h3>
-              </div>
-            )}
-          </button> */}
+          <NotActiveButton title="Library App" description="a react app that enables the user to search through books 
+              and categorize the books in 3 different categories"/>
+
           <a className="collection__card" href="https://blog.uniparticle.com/">
             <h4 className="card__title regular">Blog Page</h4>
             <p className="card__details light">a responsive blog page that containes different blogs which can be filtered with tags</p>
@@ -49,20 +38,7 @@ function App() {
             <h4 className="card__title regular">Blog Article Page</h4>
             <p className="card__details light">a responsive blog article page with comment form validation</p>
           </a>
-          <button className="btn collection__card not-published" 
-          onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={(e) => e.currentTarget !== document.activeElement? setIsShown(false): ''}
-          onFocus={() => setIsShown(true) } 
-          onBlur={ () => setIsShown(false) } 
-          >
-            <h4 className="card__title regular">Would You Rather Game</h4>
-            <p className="card__details light">a game that allow the user to add questions, answer questions and </p>
-            {isShown && (
-              <div className="not-published__overlay">
-                 <h3>will be published soon</h3>
-              </div>
-            )}
-          </button>
+          <NotActiveButton title="Would You Rather Game" description="a react app that allow the user to add poll questions, answer questions and show leaderboard "/>
         </div>
         </section>
       </main>
