@@ -87,6 +87,10 @@ a{
             z-index:2;
             cursor: default;
         }
+        &__subtitle{
+            color: $lightBlue;
+            padding: 1rem 0;
+        }
         &__collection{
             display: flex;
             @media(min-width:$ipadpro){width: 85%; justify-content: center;}

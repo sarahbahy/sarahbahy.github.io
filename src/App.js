@@ -21,6 +21,8 @@ function App() {
         </section>
         <section className="app__projects">
         <h2 className="app__projects__title bold" ><strong>My Projects</strong></h2>
+        <p className="app__projects__subtitle light">I'm interseted in working with Vue, React, SVG animations, CSS animations 
+          and in projects that makes a positive impact on the world</p>
         <div className="app__projects__collection">
           <a className="collection__card" href="https://sarahbahy.github.io/react-task-tracker/">
             <h4 className="card__title regular capitalize">Task Tracker App</h4>
