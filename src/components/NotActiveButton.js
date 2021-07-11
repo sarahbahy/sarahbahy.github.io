@@ -8,11 +8,11 @@ const NotActiveButton = ({title,description}) => {
              onFocus={() => setIsShown(true) } 
              onBlur={ () => setIsShown(false) } 
           >
-            <h4 className="card__title regular">{title}</h4>
+            <h4 className="card__title regular capitalize">{title}</h4>
             <p className="card__details light">{description}</p>
               {isShown && (
               <div className="not-published__overlay">
-                 <h3>will be published soon</h3>
+                 <h3>To be published soon</h3>
               </div>
             )}
           </button>
