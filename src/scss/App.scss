@@ -1,0 +1,118 @@
+  
+@import "variables.scss";  
+@import "base.scss";
+@import "typography.scss";
+@import "buttons.scss";
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.not-published{
+    cursor: no-drop;
+    &__overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        background-color: transparent;
+        transition: background-color 0.5s;
+        &:hover,&:focus{
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+    }
+}
+.app{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background: linear-gradient(to top right, #3B1D60 -70%, #040D3E 25%);
+    @media(min-width:$ipadpro){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    &__bg{
+        width: 100%;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        z-index:1;
+       }
+    &__intro{
+        padding: 1rem;
+        width: 100%;
+        @media(min-width:$ipadpro)
+        {
+            width: 80%;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media(min-width:$ipad){
+            flex-direction: row;
+            justify-content: space-between;
+         }
+        cursor: default;
+        .intro{
+            @include d-flex-column;
+            &__title{
+                color: $lightGreen;
+            }
+            &__subtitle{
+                color: $lightBlue;
+            }
+        }
+        .btns{
+            display: flex;
+            z-index:2;
+        }
+    }
+    &__projects{
+        padding:1rem;
+        position: relative;
+        @include d-flex-column;
+        align-items: center;
+        &__title{
+            color: $lightGreen;
+            z-index:2;
+            cursor: default;
+        }
+        &__collection{
+            display: flex;
+            @media(min-width:$ipadpro){width: 85%; justify-content: center;}
+            flex-wrap: wrap;
+            width: 95%;
+            z-index:3;
+            .collection__card{
+                @media(min-width:$ipadpro){width: calc(90% / 3);}
+               padding: 2rem;
+               margin: 1rem;
+               display: block;
+               transition: background-color 0.5s;
+               text-align: left;
+               .card__title{
+                color: $lightGreen;
+               }
+               .card__details{
+                color: $lightBlue;
+                }
+                &:hover,&:focus{
+                    background-color: rgba($color: $lightBlue, $alpha: 0.3) ;
+                    .card__details{
+                    color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
