@@ -12,12 +12,12 @@ const Projects = () => {
       
 
         <a className="collection__card" href="https://blog.uniparticle.com/" rel="noreferrer" target="_blank" >
-          <h4 className="card__title regular capitalize">Uniparticle Blog Page</h4>
+          <h3 className="card__title regular capitalize">Uniparticle Blog Page</h3>
           <p className="card__details light">Transformed UI into responsive functional web page</p>
         </a>
         
         <a className="collection__card" href="https://blog.uniparticle.com/article/8" rel="noreferrer" target="_blank">
-          <h4 className="card__title regular capitalize">Uniparticle Blog Article Page</h4>
+          <h3 className="card__title regular capitalize">Uniparticle Blog Article Page</h3>
           <p className="card__details light">Transformed UI into responsive web page with form validation</p>
         </a>
         
@@ -29,7 +29,7 @@ const Projects = () => {
         <NotActiveButton title="Would You Rather Game" description="created functional web app that allow the user to add poll questions, answer questions and visit leaderboard "/>
         
         <a className="collection__card" href="https://sarahbahy.github.io/react-task-tracker/" rel="noreferrer" target="_blank">
-          <h4 className="card__title regular capitalize">Task Tracker App</h4>
+          <h3 className="card__title regular capitalize">Task Tracker App</h3>
           <p className="card__details light">created functional app that enables the user 
           to a add new task, remove a task, and mark a task as a reminder by double clicking on it </p>
         </a>
