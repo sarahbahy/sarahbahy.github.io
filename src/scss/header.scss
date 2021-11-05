@@ -1,11 +1,10 @@
 .header{
     @include d-flex-row;
     justify-content: center;
-    
     flex-basis: 400px;
     &__links{
         @include d-flex-column;
-        
+        margin-left: -7rem;
         a{
             color:$black;
             cursor: pointer;
