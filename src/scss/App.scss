@@ -3,9 +3,10 @@
 @import "base.scss";
 @import "typography.scss";
 @import "buttons.scss";
+
 @import "logo.scss";
 @import "header.scss";
-@import "main.scss";
+@import "home.scss";
 @import "projects.scss";
 @import "blog.scss";
 a{
@@ -43,6 +44,18 @@ a{
         right: 0;
         z-index:1;
        }
-    
-   
+       .main{
+        @include d-flex-row;
+       }
+       .headline{
+        &__text{
+            color: $black;
+            font-size: 70px;
+            cursor: default;
+        }
+        &__subtext{
+            color: $black;
+            padding: 1rem 0;
+        }
+        }
 }

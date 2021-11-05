@@ -2,16 +2,7 @@
     position: relative;
     @include d-flex-column;
     // align-items: center;
-    flex-basis: calc(100vw - 300px );
-    &__title{
-        color: $black;
-        font-size: 70px;
-        cursor: default;
-    }
-    &__subtitle{
-        color: $black;
-        padding: 1rem 0;
-    }
+    flex-basis: calc(100vw - 400px );
     &__collection{
         margin: 3rem 2rem 3rem 0;
         display: grid;
