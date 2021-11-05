@@ -2,7 +2,6 @@
 .main{
     @include d-flex-row;
     // align-items: center;
-    // min-height: calc(100vh - 200px);
     .slogen{
         cursor: default;
         &__title{

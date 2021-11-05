@@ -6,7 +6,7 @@ const Logo = () => {
             <ul className={"logo"}>
               <img src={logo}  alt="logo" />
               <div className={"logo__text-wrapper"}>
-          <h3 className=" bold capitalize"><em>Sarah Bahi</em></h3>
+          <h3 className=" bold capitalize">Sarah Bahi</h3>
           <p className=" regular capitalize">Front-end Developer</p>
           </div>
             </ul>

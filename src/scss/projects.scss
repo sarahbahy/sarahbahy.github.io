@@ -13,14 +13,10 @@
         padding: 1rem 0;
     }
     &__collection{
-        display: flex;
-        @media(min-width:$ipadpro){justify-content: center;}
-        flex-wrap: wrap;
-        z-index:3;
+        margin: 3rem 0;
+        display: grid;
+        @media(min-width:$ipadpro){grid-template-columns: auto auto auto; gap:5rem;}
         .collection__card{
-            @media(min-width:$ipadpro){width: calc(90% / 3);}
-           padding: 2rem;
-           margin: 1rem;
            display: block;
            transition: background-color 0.5s;
            text-align: left;
