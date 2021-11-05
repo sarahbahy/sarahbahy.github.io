@@ -7,7 +7,8 @@ const Projects = () => {
       <p className=" headline__text regular capitalize"><strong>deliver</strong></p>
         <p className="headline__text regular capitalize"><strong>Stunning</strong></p>
         <p className="headline__text regular capitalize"><strong>Web Pages</strong></p>
-        <p className="headline__text regular capitalize"><strong>on time</strong></p>
+        <p className="headline__text regular capitalize"><strong>using latest</strong></p>
+        <p className="headline__text regular capitalize"><strong>technologies</strong></p>
       <p className="headline__subtext light">Experienced with Vue, React, Js, Css, HTML, and SVG animations</p>
       </div>
       <div className=" projects__collection">
