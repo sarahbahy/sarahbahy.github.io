@@ -7,8 +7,8 @@ const Header = () => {
               <Link to="/">Home</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/blog">Blog</Link>
-              <a href="https://www.linkedin.com/in/sarah-bahi/">LinkedIn</a>
-              <a href="https://github.com/sarahbahy">GitHub</a>
+              <a href="https://www.linkedin.com/in/sarah-bahi/" rel="noreferrer" target="_blank" >LinkedIn</a>
+              <a href="https://github.com/sarahbahy" rel="noreferrer" target="_blank" >GitHub</a>
             </nav>
     )
 }

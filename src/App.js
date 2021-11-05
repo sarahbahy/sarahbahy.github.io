@@ -5,6 +5,7 @@ import Header from './components/header'
 import Logo from './components/logo'
 import Home from './components/home'
 import Projects from './components/projects'
+import Blog from './components/blog'
 import './scss/App.scss';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="blog" element={<Blog />} />
       </Routes>
         </section>
       </main>
