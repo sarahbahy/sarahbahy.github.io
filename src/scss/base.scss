@@ -3,6 +3,11 @@
     display:flex;
     flex-direction: column;
 }
+
+@mixin d-flex-row {
+    display:flex;
+    flex-direction: row;
+}
 *{
 margin:0;
 padding:0;

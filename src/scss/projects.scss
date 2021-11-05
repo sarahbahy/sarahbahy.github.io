@@ -1,0 +1,42 @@
+.projects{
+    position: relative;
+    @include d-flex-column;
+    // align-items: center;
+    flex-basis: calc(100vw - 300px );
+    &__title{
+        color: $black;
+        font-size: 70px;
+        cursor: default;
+    }
+    &__subtitle{
+        color: $black;
+        padding: 1rem 0;
+    }
+    &__collection{
+        display: flex;
+        @media(min-width:$ipadpro){justify-content: center;}
+        flex-wrap: wrap;
+        z-index:3;
+        .collection__card{
+            @media(min-width:$ipadpro){width: calc(90% / 3);}
+           padding: 2rem;
+           margin: 1rem;
+           display: block;
+           transition: background-color 0.5s;
+           text-align: left;
+           .card__title{
+            color: $black;
+           }
+           .card__details{
+            color: $black;
+            padding: 1rem 0;
+            }
+            &:hover,&:focus{
+                // background-color: rgba($color: $lightBlue, $alpha: 0.3) ;
+                .card__details{
+                color: $black;
+                }
+            }
+        }
+    }
+}
