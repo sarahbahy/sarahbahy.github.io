@@ -12,7 +12,7 @@ const Home = () => {
         <p className="headline__text regular capitalize"><strong>Web Pages</strong></p>
         <p className=" headline__subtext light">Nothing to see here right now</p>
         </div>
-        <img src={blog}  alt="blog" />
+        {/* <img src={blog}  alt="blog" /> */}
       </section>
     )
 }

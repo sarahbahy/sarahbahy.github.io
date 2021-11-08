@@ -13,16 +13,6 @@ const Projects = () => {
       </div>
       <div className=" projects__collection">
       
-
-        <a className="collection__card" href="https://blog.uniparticle.com/" rel="noreferrer" target="_blank" >
-          <h3 className="card__title regular capitalize">Uniparticle Blog Page</h3>
-          <p className="card__details light">Transformed UI into responsive functional web page</p>
-        </a>
-        
-        <a className="collection__card" href="https://blog.uniparticle.com/article/8" rel="noreferrer" target="_blank">
-          <h3 className="card__title regular capitalize">Uniparticle Blog Article Page</h3>
-          <p className="card__details light">Transformed UI into responsive web page with form validation</p>
-        </a>
         
         <NotActiveButton title="HCM Lab" description="Created and Transformed UI into fully functional webiste"/>
         
